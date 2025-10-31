@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dip It</title>
+ <link rel="stylesheet" href="style-sauces.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">
+      <span class="roll">DIP</span>
+      <span class="it">IT</span>
+    </h1>
+
+    <img id="wrap" src="images/pizza-step4.png" alt="Rolled Pizza" />
+
+    <div class="sauces">
+      <!-- RANCH -->
+      <div class="sauce ranch" data-sauce="Ranch Sauce">
+        <img src="images/Ranch Sauce.png" alt="Ranch Sauce" />
+      </div>
+
+      <!-- BUTTER CHICKEN -->
+      <div class="sauce butter-chicken" data-sauce="Butter Chicken Sauce">
+        <img src="images/Butter Chicken Sauce.png" alt="Butter Chicken Sauce" />
+      </div>
+
+      <!-- BUFFALO -->
+      <div class="sauce buffalo" data-sauce="Buffalo Sauce">
+        <img src="images/Buffalo Sauce .png" alt="Buffalo Sauce" />
+      </div>
+
+      <!-- GARLIC BUTTER -->
+      <div class="sauce garlic-butter" data-sauce="Garlic Butter Sauce">
+        <img src="images/garlic butter sauce.png" alt="Garlic Butter Sauce" />
+      </div>
+
+      <!-- CHILI -->
+      <div class="sauce chili" data-sauce="Chili Sauce">
+        <img src="images/chili Sauce .png" alt="Chili Sauce" />
+      </div>
+    </div>
+
+    <p class="instruction">Choose Your Favourite Sauce</p>
+  </div>
+
+  <!-- Offer Popup -->
+  <div id="offer" class="offer">
+    <div class="offer-box">
+      <h2>🔥 Special Offer! 🔥</h2>
+      <p id="offer-text"></p>
+      <button id="close-offer">OK</button>
+    </div>
+  </div>
+
+  <script src="sauces.js"></script>
+</body>
+</html>

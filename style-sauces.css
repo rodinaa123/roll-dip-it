@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background-color: #efd5ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  justify-content: flex-start;
+  padding-top: 1.5rem;
+}
+
+/* Title section */
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.roll {
+  color: #f06626;
+  text-shadow: 4px 3px 0 #fffe95;
+}
+
+.it {
+  color: #79be50;
+  text-shadow: 4px 3px 0 #fffe95;
+  transform: rotate(-8deg);
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 7rem;
+}
+
+/* Rolled pizza image */
+#wrap {
+  width: 450px;
+  user-select: none;
+  -webkit-user-drag: none;
+  margin: 0.1rem 0 0.1rem 0;
+}
+
+/* Sauce grid */
+.sauces {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem 0.8rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: -13rem;
+}
+
+/* Base sauce image styling */
+.sauce img {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sauce img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Individual Sauce Adjustments --- */
+.sauce.ranch img {
+  width: 90px;
+  transform: translateX(-10px);
+  margin-top: 0.1rem;
+}
+
+.sauce.butter-chicken img {
+  width: 100px;
+  transform: translateY(10px);
+}
+
+.sauce.buffalo img {
+  width: 110px;
+  transform: translateX(15px);
+}
+
+.sauce.garlic-butter img {
+  width: 110px;
+  transform: translateX(40px);
+}
+
+.sauce.chili img {
+  width: 100px;
+  transform: translateX(80px);
+}
+
+/* Instruction text */
+.instruction {
+  font-size: 1.2rem;
+  color: #f06626;
+  font-weight: 700;
+  margin-top: 7rem;
+}
+
+/* Offer popup */
+.offer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-box {
+  background: #fff8e7;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.offer-box h2 {
+  color: #f06626;
+}
+
+.offer-box button {
+  margin-top: 1rem;
+  background-color: #79be50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

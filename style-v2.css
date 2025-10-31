@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #EFD5ED; /* soft pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* Title section */
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem; /* ↓ reduce space below title */
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8; /* keeps title tight */
+}
+
+/* ROLL text */
+.roll {
+  color: #F06626; /* orange */
+  text-shadow: 4px 3px 0 #FFFE95; 
+}
+
+/* IT text */
+.it {
+  color: #79BE50; /* green */
+  text-shadow: 4px 3px 0 #FFFE95; 
+  transform: rotate(-8deg);
+  display: inline-block;
+  margin-top: 0rem;
+  margin-left: 13rem;
+}
+
+
+/* Center pizza image */
+#pizza {
+  width: 430px;
+  transition: transform 0.1s linear;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+  margin: 0.5rem 0 1.5rem 0; /* ↓ smaller top margin */
+}
+
+/* Instruction text */
+.instruction {
+  font-size: 1.4rem;
+  color: #F06626;
+  font-weight: 700;
+  margin-top: 2rem;
+}
